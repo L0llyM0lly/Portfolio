@@ -13,6 +13,11 @@
   background: #FFF;
 }
 
+/* line 9, ../../../../Portfolio/sass/base/_base.sass */
+.color-purl {
+  color: #8E2DE2;
+}
+
 /* line 1, ../../../../Portfolio/sass/base/_typography.sass */
 .body {
   font-family: Montserrat sans-serif;
@@ -20,6 +25,25 @@
   color: #A9A9AA;
   letter-spacing: -0.028rem;
   text-transform: uppercase;
+}
+
+/* line 1, ../../../../Portfolio/sass/components/_button.sass */
+.btn {
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0.1rem #8E2DE2 solid;
+  text-decoration: none;
+  color: #8E2DE2;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.5rem;
+}
+
+/* line 11, ../../../../Portfolio/sass/components/_button.sass */
+.btn__purl {
+  background: #8E2DE2;
+  color: #FFF;
 }
 
 /* line 1, ../../../../Portfolio/sass/layout/_navigation.sass */
@@ -66,38 +90,69 @@
 }
 
 /* line 27, ../../../../Portfolio/sass/layout/_navigation.sass */
-.navigation__link_purl {
-  color: #8E2DE2;
-}
-
-/* line 29, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* line 35, ../../../../Portfolio/sass/layout/_navigation.sass */
-.btn {
-  font-size: 1.2rem;
-  font-family: Montserrat;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: 0.1rem #8E2DE2 solid;
-  text-decoration: none;
-  color: #8E2DE2;
-  padding: 1.2rem 1.6rem;
-}
-
-/* line 47, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 32, ../../../../Portfolio/sass/layout/_navigation.sass */
 .header-logo {
   text-decoration: none;
   font-family: Anton sans-serif;
   font-size: 2.8rem;
-  color: #A9A9AA;
+  background-color: #A9A9AA;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  background: linear-gradient(125deg, #a34aff 0%, #470b47 100%);
+  background-image: linear-gradient(125deg, #a34aff 0%, #470b47 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* line 1, ../../../../Portfolio/sass/layout/_home.sass */
+.section-about {
+  position: relative;
+  height: 100vh;
+  background: #111214;
+}
+
+/* line 5, ../../../../Portfolio/sass/layout/_home.sass */
+.section-about__img {
+  position: absolute;
+  width: 30rem;
+  height: 40rem;
+  background: linear-gradient(0deg, rgba(169, 169, 170, 0.1) 0.1%, rgba(17, 18, 20, 0.1) 99.94%), url(../img/Lolly.JPG) center/contain no-repeat;
+  top: 2rem;
+  left: 40rem;
+}
+
+/* line 12, ../../../../Portfolio/sass/layout/_home.sass */
+.section-about__left {
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+}
+
+/* line 20, ../../../../Portfolio/sass/layout/_home.sass */
+.title__text {
+  color: #FFF;
+  font-size: 7rem;
+  font-family: Anton;
+  letter-spacing: .19rem;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+/* line 27, ../../../../Portfolio/sass/layout/_home.sass */
+.title__text-one {
+  color: #FFF;
+  font-size: 2.4rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
