@@ -1,0 +1,54 @@
+.navigation
+    display: grid
+    grid-template-columns: 1fr 5fr 1fr
+    height: 5rem
+    background: $color-black
+    &__header
+        display: flex
+        justify-content: center
+        align-items: center
+    &__nav
+        display: flex
+        justify-content: center
+        align-items: center
+    &__list
+        display: flex
+        justify-content: center
+    &__item
+        &:not(:last-child)
+            margin-right: 5.4rem
+    &__link
+        text-decoration: none
+        font-family: Montserrat
+        color: $color-grey
+        text-transform: uppercase
+        font-weight: 600
+        font-size: $font-size-text
+        &_purl
+            color: $color-purl
+    &__button
+        display: flex
+        justify-content: center
+        align-items: center
+        
+
+.btn
+    font-size: $font-size-text
+    font-family: Montserrat
+    font-weight: 600
+    text-transform: uppercase
+    border: 0.1rem $color-purl solid
+    text-decoration: none
+    color: $color-purl
+    padding: 1.2rem 1.6rem
+    
+
+        
+.header-logo
+    text-decoration: none
+    font-family: Anton sans-serif
+    font-size: 2.8rem
+    color: $color-grey
+    letter-spacing: 0.42px
+    text-transform: uppercase
+    background: linear-gradient(125deg, rgba(163,74,255,1) 0%, rgba(71,11,71,1) 100%)

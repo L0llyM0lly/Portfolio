@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* Цвет Текста */
+/* Основные цвета сайта */
+/* line 1, ../../../../Portfolio/sass/base/_base.sass */
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 6, ../../../../Portfolio/sass/base/_base.sass */
+.container {
+  background: #FFF;
+}
+
+/* line 1, ../../../../Portfolio/sass/base/_typography.sass */
+.body {
+  font-family: Montserrat sans-serif;
+  font-weight: 600;
+  color: #A9A9AA;
+  letter-spacing: -0.028rem;
+  text-transform: uppercase;
+}
+
+/* line 1, ../../../../Portfolio/sass/layout/_navigation.sass */
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  height: 5rem;
+  background: #111214;
+}
+
+/* line 6, ../../../../Portfolio/sass/layout/_navigation.sass */
+.navigation__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 10, ../../../../Portfolio/sass/layout/_navigation.sass */
+.navigation__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 14, ../../../../Portfolio/sass/layout/_navigation.sass */
+.navigation__list {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 18, ../../../../Portfolio/sass/layout/_navigation.sass */
+.navigation__item:not(:last-child) {
+  margin-right: 5.4rem;
+}
+
+/* line 20, ../../../../Portfolio/sass/layout/_navigation.sass */
+.navigation__link {
+  text-decoration: none;
+  font-family: Montserrat;
+  color: #A9A9AA;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* line 27, ../../../../Portfolio/sass/layout/_navigation.sass */
+.navigation__link_purl {
+  color: #8E2DE2;
+}
+
+/* line 29, ../../../../Portfolio/sass/layout/_navigation.sass */
+.navigation__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 35, ../../../../Portfolio/sass/layout/_navigation.sass */
+.btn {
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0.1rem #8E2DE2 solid;
+  text-decoration: none;
+  color: #8E2DE2;
+  padding: 1.2rem 1.6rem;
+}
+
+/* line 47, ../../../../Portfolio/sass/layout/_navigation.sass */
+.header-logo {
+  text-decoration: none;
+  font-family: Anton sans-serif;
+  font-size: 2.8rem;
+  color: #A9A9AA;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  background: linear-gradient(125deg, #a34aff 0%, #470b47 100%);
+}
+
+/*# sourceMappingURL=style.css.map */
