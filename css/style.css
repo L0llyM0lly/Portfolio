@@ -11,6 +11,7 @@
 /* line 6, ../../../../Portfolio/sass/base/_base.sass */
 .container {
   background: #FFF;
+  max-width: 114rem;
 }
 
 /* line 9, ../../../../Portfolio/sass/base/_base.sass */
@@ -27,6 +28,42 @@
   text-transform: uppercase;
 }
 
+/* line 9, ../../../../Portfolio/sass/base/_typography.sass */
+.section-about__background-text {
+  color: #FFF;
+  font-family: Anton;
+  font-size: 10rem;
+  opacity: 0.07;
+  text-transform: uppercase;
+  transform: skewY(-5deg) rotate(-15deg) scale(1.5);
+  position: absolute;
+  top: 10rem;
+  left: 20rem;
+  text-shadow: #FFF 1px 0 10px;
+  z-index: 3;
+}
+
+/* .background
+    z-index: 0
+    position: absolute
+    &__line1
+        height: 5rem
+        background: $color-white
+
+        transform: rotate(110deg)
+        opacity: 0.04
+
+    &__line2
+        height: 5rem
+        background: $color-white
+        transform: rotate(120deg)
+        opacity: 0.01
+    &__line3
+        height: 5rem
+        background: $color-white
+        transform: rotate(130deg)
+        opacity: 0.03 */
+/* transform: rotate(110deg) scale(1.5) */
 /* line 1, ../../../../Portfolio/sass/components/_button.sass */
 .btn {
   font-size: 1.2rem;
@@ -131,7 +168,7 @@
 /* line 1, ../../../../Portfolio/sass/layout/_home.sass */
 .section-about {
   position: relative;
-  height: 100vh;
+  height: 45rem;
   background: #111214;
 }
 
@@ -141,11 +178,13 @@
   width: 30rem;
   height: 40rem;
   background: linear-gradient(0deg, rgba(169, 169, 170, 0.1) 0.1%, rgba(17, 18, 20, 0.1) 99.94%), url(../img/Lolly.JPG) center/contain no-repeat;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   top: 2rem;
   left: 40rem;
+  z-index: 7;
 }
 
-/* line 12, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 14, ../../../../Portfolio/sass/layout/_home.sass */
 .section-about__left {
   width: 40rem;
   height: 40rem;
@@ -154,7 +193,12 @@
   left: 5rem;
 }
 
-/* line 20, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 21, ../../../../Portfolio/sass/layout/_home.sass */
+.title {
+  z-index: 15;
+}
+
+/* line 23, ../../../../Portfolio/sass/layout/_home.sass */
 .title__text {
   color: #FFF;
   font-size: 7rem;
@@ -164,7 +208,7 @@
   margin-bottom: 1.2rem;
 }
 
-/* line 27, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 30, ../../../../Portfolio/sass/layout/_home.sass */
 .title__text-one {
   color: #FFF;
   font-size: 2.4rem;
@@ -174,35 +218,35 @@
   margin-bottom: 1.2rem;
 }
 
-/* line 35, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 38, ../../../../Portfolio/sass/layout/_home.sass */
 .media {
   display: flex;
   position: absolute;
-  top: 25rem;
-  left: 25rem;
+  top: 15rem;
+  left: 20rem;
 }
 
-/* line 40, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 43, ../../../../Portfolio/sass/layout/_home.sass */
 .media__link {
   box-shadow: 0px 0px 10px 1px #8E2DE2;
 }
 
-/* line 41, ../../../../Portfolio/sass/layout/_home.sass */
-.media__link:not(:last-child) {
+/* line 45, ../../../../Portfolio/sass/layout/_home.sass */
+.media__link:not(.media__link:last-child) {
   margin-right: 5rem;
 }
 
-/* line 44, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 47, ../../../../Portfolio/sass/layout/_home.sass */
 .media__link:hover {
   box-shadow: 0px 0px 18px 8px #8E2DE2;
   transform: scale(1.2);
   transition: 0.3s all;
 }
 
-/* line 48, ../../../../Portfolio/sass/layout/_home.sass */
-.media__img {
-  width: 1.5rem;
-  height: 1.5rem;
+/* line 51, ../../../../Portfolio/sass/layout/_home.sass */
+.media__imag {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

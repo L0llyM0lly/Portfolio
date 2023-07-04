@@ -1,14 +1,16 @@
 .section-about
     position: relative
-    height: 100vh
+    height: 45rem
     background: $color-black
     &__img
         position: absolute
         width: 30rem
         height: 40rem
-        background:  linear-gradient(0deg, rgba($color-grey, 0.1) 0.10%, rgba($color-black, 0.1) 99.94%), url(../img/Lolly.JPG) center/contain no-repeat 
+        background:  linear-gradient(0deg, rgba($color-grey, 0.1) 0.10%, rgba($color-black, 0.1) 99.94%), url(../img/Lolly.JPG) center/contain no-repeat
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
         top: 2rem
         left: 40rem
+        z-index: 7
     &__left
         width: 40rem
         height: 40rem
@@ -17,6 +19,7 @@
         left: 5rem
 
 .title
+    z-index: 15
     &__text
         color: $color-white
         font-size: 7rem
@@ -35,18 +38,17 @@
 .media
     display: flex
     position: absolute
-    top: 25rem
-    left: 25rem
+    top: 15rem
+    left: 20rem
     &__link
-        &:not(:last-child)
-            margin-right: 5rem
         box-shadow: 0px 0px 10px 1px $color-purl
+        &:not(&:last-child)
+            margin-right: 5rem
         &:hover
             box-shadow: 0px 0px 18px 8px $color-purl
             transform: scale(1.2)
             transition: 0.3s all
-    &__img
-        width: 1.5rem
-        height: 1.5rem
-        
+    &__imag
+        width: 2.5rem
+        height: 2.5rem  
         
