@@ -1,3 +1,4 @@
+/* Главная Страница */
 .section-about
     position: relative
     height: 45rem
@@ -52,3 +53,75 @@
         width: 2.5rem
         height: 2.5rem  
         
+/* Секция About Me */
+
+.about-me
+    height: 100vh
+    display: flex
+    justify-content: space-around
+    position: relative
+    &__box
+        width: 40rem
+    &__about
+        color: $color-black
+        font-size: 4rem
+        font-family: Anton
+        font-weight: 400
+        letter-spacing: 0.16rem
+        text-transform: uppercase
+        position: absolute
+        top: 4rem
+        left: 47rem
+        span
+            color: $color-purl
+            font-size: 6rem
+    &__text
+        color: $color-grey
+        box-sizing: border-box
+        width: 29rem
+        font-size: 0.9rem
+        font-family: Montserrat
+        font-weight: 500
+        line-height: 2rem
+        position: absolute
+        top: 14rem
+        left: 51rem
+.experience
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 40rem
+    &__one
+        top: 7rem
+        left: 7rem
+        position: absolute
+    &__two
+        top: 10rem
+        left: 25rem
+        position: absolute
+    &__text
+        color: $color-black
+        font-size: 14px
+        font-family: Montserrat
+        font-weight: 600
+        line-height: 2rem
+        letter-spacing: -0.56px
+    &__numb
+        margin: 0 
+        color: $color-purl
+        font-size: 4rem
+        text-align: right
+        font-family: Anton
+        font-weight: 400
+        letter-spacing: 0.128rem
+        text-transform: uppercase
+    &__photo
+        width: 13rem
+        height: 15rem
+        
+
+.text-box
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+
