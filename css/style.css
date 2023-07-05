@@ -77,9 +77,10 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 5rem;
 }
 
-/* line 9, ../../../../Portfolio/sass/components/_cards.sass */
+/* line 10, ../../../../Portfolio/sass/components/_cards.sass */
 .cards {
   width: 15rem;
   height: 19rem;
@@ -89,7 +90,7 @@
   border-radius: 0.5rem;
 }
 
-/* line 16, ../../../../Portfolio/sass/components/_cards.sass */
+/* line 17, ../../../../Portfolio/sass/components/_cards.sass */
 .cards:hover {
   background-color: #111214;
   color: #FFF;
@@ -97,13 +98,13 @@
   transition: 0.7s;
 }
 
-/* line 21, ../../../../Portfolio/sass/components/_cards.sass */
+/* line 22, ../../../../Portfolio/sass/components/_cards.sass */
 .cards i {
   font-size: 2.1rem;
   margin: 1.3rem 0;
 }
 
-/* line 24, ../../../../Portfolio/sass/components/_cards.sass */
+/* line 25, ../../../../Portfolio/sass/components/_cards.sass */
 .cards__title {
   font-size: 1rem;
   font-family: Montserrat;
@@ -112,13 +113,98 @@
   margin-bottom: 1rem;
 }
 
-/* line 30, ../../../../Portfolio/sass/components/_cards.sass */
+/* line 31, ../../../../Portfolio/sass/components/_cards.sass */
 .cards__text {
   font-size: 0.8rem;
   font-family: Montserrat;
   font-weight: 500;
   line-height: 1.6rem;
   color: #A9A9AA;
+}
+
+/* line 1, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer {
+  width: 100vw;
+  height: 37rem;
+  background: #111214;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+/* line 9, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer__box {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+/* line 12, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer__box i {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+/* line 17, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer__contacts {
+  width: 24rem;
+  height: 31rem;
+  padding: 2rem 3rem;
+}
+
+/* line 22, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer__title {
+  color: #FFF;
+  font-size: 2.5rem;
+  font-family: Anton;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* line 30, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer__title span {
+  color: #8E2DE2;
+  font-size: 4rem;
+  font-family: Anton;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+/* line 37, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer__text {
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #FFF;
+  margin-bottom: 1rem;
+}
+
+/* line 44, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer__phone a {
+  text-decoration: none;
+  color: #A9A9AA;
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+/* line 50, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer__media {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 54, ../../../../Portfolio/sass/layout/_footer.sass */
+.footer__fill {
+  background: #A9A9AA;
+  width: 41rem;
+  height: 29rem;
+  margin-top: 2rem;
 }
 
 /* line 1, ../../../../Portfolio/sass/layout/_navigation.sass */
@@ -260,29 +346,32 @@
 
 /* line 44, ../../../../Portfolio/sass/layout/_home.sass */
 .media__link {
+  border-radius: 20%;
   box-shadow: 0px 0px 10px 1px #8E2DE2;
 }
 
-/* line 46, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 47, ../../../../Portfolio/sass/layout/_home.sass */
 .media__link:not(.media__link:last-child) {
   margin-right: 5rem;
 }
 
-/* line 48, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 49, ../../../../Portfolio/sass/layout/_home.sass */
 .media__link:hover {
   box-shadow: 0px 0px 18px 8px #8E2DE2;
   transform: scale(1.2);
   transition: 0.3s all;
 }
 
-/* line 52, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 53, ../../../../Portfolio/sass/layout/_home.sass */
 .media__imag {
+  display: flex;
+  justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
 }
 
 /* Секция About Me */
-/* line 58, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 60, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me {
   height: 40rem;
   display: flex;
@@ -290,12 +379,12 @@
   position: relative;
 }
 
-/* line 63, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 65, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me__box {
   width: 40rem;
 }
 
-/* line 65, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 67, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me__about {
   color: #111214;
   font-size: 4rem;
@@ -308,13 +397,13 @@
   left: 47rem;
 }
 
-/* line 75, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 77, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me__about span {
   color: #8E2DE2;
   font-size: 6rem;
 }
 
-/* line 78, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 80, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me__text {
   color: #A9A9AA;
   box-sizing: border-box;
@@ -328,7 +417,7 @@
   left: 51rem;
 }
 
-/* line 89, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 91, ../../../../Portfolio/sass/layout/_home.sass */
 .experience {
   display: flex;
   justify-content: space-around;
@@ -336,21 +425,21 @@
   width: 40rem;
 }
 
-/* line 94, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 96, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__one {
   top: 7rem;
   left: 7rem;
   position: absolute;
 }
 
-/* line 98, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 100, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__two {
   top: 10rem;
   left: 25rem;
   position: absolute;
 }
 
-/* line 102, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 104, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__text {
   color: #111214;
   font-size: 14px;
@@ -360,7 +449,7 @@
   letter-spacing: -0.56px;
 }
 
-/* line 109, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 111, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__numb {
   margin: 0;
   color: #8E2DE2;
@@ -372,13 +461,13 @@
   text-transform: uppercase;
 }
 
-/* line 118, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 120, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__photo {
   width: 13rem;
   height: 15rem;
 }
 
-/* line 123, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 125, ../../../../Portfolio/sass/layout/_home.sass */
 .text-box {
   display: flex;
   justify-content: space-evenly;
