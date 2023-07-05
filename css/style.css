@@ -11,7 +11,7 @@
 /* line 6, ../../../../Portfolio/sass/base/_base.sass */
 .container {
   background: #FFF;
-  max-width: 114rem;
+  max-width: 100rem;
 }
 
 /* line 9, ../../../../Portfolio/sass/base/_base.sass */
@@ -43,27 +43,6 @@
   z-index: 3;
 }
 
-/* .background
-    z-index: 0
-    position: absolute
-    &__line1
-        height: 5rem
-        background: $color-white
-
-        transform: rotate(110deg)
-        opacity: 0.04
-
-    &__line2
-        height: 5rem
-        background: $color-white
-        transform: rotate(120deg)
-        opacity: 0.01
-    &__line3
-        height: 5rem
-        background: $color-white
-        transform: rotate(130deg)
-        opacity: 0.03 */
-/* transform: rotate(110deg) scale(1.5) */
 /* line 1, ../../../../Portfolio/sass/components/_button.sass */
 .btn {
   font-size: 1.2rem;
@@ -88,6 +67,58 @@
 .btn__purl {
   background: #8E2DE2;
   color: #FFF;
+}
+
+/* line 1, ../../../../Portfolio/sass/components/_cards.sass */
+.service {
+  width: 80rem;
+  height: 20rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 9, ../../../../Portfolio/sass/components/_cards.sass */
+.cards {
+  width: 15rem;
+  height: 19rem;
+  background: #F7F7F7;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}
+
+/* line 16, ../../../../Portfolio/sass/components/_cards.sass */
+.cards:hover {
+  background-color: #111214;
+  color: #FFF;
+  box-shadow: 0px 0px 18px 8px #8E2DE2;
+  transition: 0.7s;
+}
+
+/* line 21, ../../../../Portfolio/sass/components/_cards.sass */
+.cards i {
+  font-size: 2.1rem;
+  margin: 1.3rem 0;
+}
+
+/* line 24, ../../../../Portfolio/sass/components/_cards.sass */
+.cards__title {
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* line 30, ../../../../Portfolio/sass/components/_cards.sass */
+.cards__text {
+  font-size: 0.8rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #A9A9AA;
 }
 
 /* line 1, ../../../../Portfolio/sass/layout/_navigation.sass */
@@ -253,7 +284,7 @@
 /* Секция About Me */
 /* line 58, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me {
-  height: 100vh;
+  height: 40rem;
   display: flex;
   justify-content: space-around;
   position: relative;
