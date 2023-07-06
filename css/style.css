@@ -122,6 +122,78 @@
   color: #A9A9AA;
 }
 
+/* line 1, ../../../../Portfolio/sass/components/_form.sass */
+.book {
+  width: 41rem;
+  height: 29rem;
+  box-shadow: 0px 0px 18px 3px #8E2DE2;
+  border-radius: 5%;
+  padding: 1rem;
+}
+
+/* line 9, ../../../../Portfolio/sass/components/_form.sass */
+.box-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 13, ../../../../Portfolio/sass/components/_form.sass */
+.form-title {
+  color: #FFF;
+  font-size: 1.3rem;
+  font-family: Anton;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* line 20, ../../../../Portfolio/sass/components/_form.sass */
+.form-title span {
+  color: #8E2DE2;
+}
+
+/* line 25, ../../../../Portfolio/sass/components/_form.sass */
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+/* line 29, ../../../../Portfolio/sass/components/_form.sass */
+.form__box-title {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* line 32, ../../../../Portfolio/sass/components/_form.sass */
+.form__input {
+  width: 19rem;
+  height: 3rem;
+  color: #FFF;
+  background: rgba(202, 205, 209, 0.1);
+}
+
+/* line 37, ../../../../Portfolio/sass/components/_form.sass */
+.form__label {
+  color: #FFF;
+  margin-bottom: 1rem;
+}
+
+/* line 40, ../../../../Portfolio/sass/components/_form.sass */
+.form__text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 43, ../../../../Portfolio/sass/components/_form.sass */
+.form__input-text {
+  box-sizing: border-box;
+  width: 39rem;
+  height: 7rem;
+  color: #FFF;
+  background: rgba(202, 205, 209, 0.1);
+}
+
 /* line 1, ../../../../Portfolio/sass/layout/_footer.sass */
 .footer {
   width: 100vw;
