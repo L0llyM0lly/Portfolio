@@ -1,16 +1,16 @@
 @mixin respond($breakpoint)
-    @if $breakpoint == tab-land
+    @if $breakpoint == x-large
         @media (max-width: 1200px)
             @content
-    @if $breakpoint == tab-port
+    @if $breakpoint == large
         @media (max-width: 900px)
             @content
-    @if $breakpoint == burger
+    @if $breakpoint == medium
         @media (max-width: 768px)
             @content
     @if $breakpoint == phone
-        @media (max-width: 600px)
+        @media (max-width: 639px)
             @content
-    @if $breakpoint == big-screen
+    @if $breakpoint == xx-large
         @media (min-width:1800px)
             @content

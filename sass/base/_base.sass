@@ -5,16 +5,17 @@
 
 html
     font-size: 100%
-    @include respond(tab-land)
+    @include respond(x-large)
         font-size: 80%
-    @include respond(tab-port)
+    @include respond(large)
         font-size: 60%
+    @include respond(medium)
+        font-size: 50%
     @include respond(phone)
         font-size: 40%
-    @include respond(big-screen)
+    @include respond(xx-large)
         font-size: 100%
-    @include respond(burger)
-        font-size: 50%
+
 
 .container
     background: $color-white

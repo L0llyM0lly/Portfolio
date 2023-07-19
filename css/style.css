@@ -27,7 +27,14 @@ html {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  /* line 6, ../../../../Portfolio/sass/base/_base.sass */
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 639px) {
   /* line 6, ../../../../Portfolio/sass/base/_base.sass */
   html {
     font-size: 40%;
@@ -41,20 +48,13 @@ html {
   }
 }
 
-@media (max-width: 768px) {
-  /* line 6, ../../../../Portfolio/sass/base/_base.sass */
-  html {
-    font-size: 50%;
-  }
-}
-
-/* line 19, ../../../../Portfolio/sass/base/_base.sass */
+/* line 20, ../../../../Portfolio/sass/base/_base.sass */
 .container {
   background: #FFF;
   max-width: 100vw;
 }
 
-/* line 22, ../../../../Portfolio/sass/base/_base.sass */
+/* line 23, ../../../../Portfolio/sass/base/_base.sass */
 .color-purl {
   color: #8E2DE2;
 }
