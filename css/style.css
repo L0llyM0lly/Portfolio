@@ -37,7 +37,7 @@ html {
 @media (max-width: 639px) {
   /* line 6, ../../../../Portfolio/sass/base/_base.sass */
   html {
-    font-size: 40%;
+    font-size: 45%;
   }
 }
 
@@ -323,11 +323,45 @@ html {
 .navigation {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #111214;
   height: 5rem;
 }
 
-/* line 6, ../../../../Portfolio/sass/layout/_navigation.sass */
+@media (max-width: 639px) {
+  /* line 1, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .navigation {
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+  }
+}
+
+/* line 11, ../../../../Portfolio/sass/layout/_navigation.sass */
+.navigation__nav-burger {
+  border: 40rem;
+  border-radius: 50rem;
+  background: #A9A9AA;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+@media (max-width: 639px) {
+  /* line 11, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .navigation__nav-burger {
+    display: flex;
+    position: fixed;
+    top: 1rem;
+    right: 5rem;
+    z-index: 30;
+  }
+}
+
+/* line 27, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__nav {
   display: flex;
   justify-content: center;
@@ -335,30 +369,37 @@ html {
   margin-right: 10rem;
 }
 
-/* line 11, ../../../../Portfolio/sass/layout/_navigation.sass */
+@media (max-width: 639px) {
+  /* line 27, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .navigation__nav {
+    display: none;
+  }
+}
+
+/* line 34, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__list {
   display: flex;
   justify-content: center;
 }
 
-/* line 14, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 37, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__item {
   list-style-type: none;
 }
 
-/* line 16, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 39, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__item:not(:last-child) {
   margin-right: 5.4rem;
 }
 
-/* line 18, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 41, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__item:hover {
   box-shadow: 0px 0px 18px 8px #8E2DE2;
   transform: scale(1.2);
   transition: 0.3s all;
 }
 
-/* line 22, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 45, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__link {
   text-decoration: none;
   font-family: Montserrat;
@@ -368,11 +409,48 @@ html {
   font-size: 1.2rem;
 }
 
-/* line 29, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 52, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 639px) {
+  /* line 52, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .navigation__button {
+    position: fixed;
+    z-index: 30;
+    top: 1.5rem;
+    right: 13rem;
+  }
+}
+
+/* line 63, ../../../../Portfolio/sass/layout/_navigation.sass */
+.hamburger {
+  border: none;
+  background: #111214;
+  height: .2rem;
+  width: 2rem;
+}
+
+/* line 68, ../../../../Portfolio/sass/layout/_navigation.sass */
+.hamburger::before, .hamburger::after {
+  content: "";
+  background: #111214;
+  height: .2rem;
+  width: 2rem;
+  display: block;
+}
+
+/* line 74, ../../../../Portfolio/sass/layout/_navigation.sass */
+.hamburger::before {
+  transform: translateY(-0.5rem);
+}
+
+/* line 76, ../../../../Portfolio/sass/layout/_navigation.sass */
+.hamburger::after {
+  transform: translateY(0.4rem);
 }
 
 /* Главная Страница */

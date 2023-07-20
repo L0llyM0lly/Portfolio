@@ -1,13 +1,36 @@
 .navigation
     display: flex
     justify-content: center
+    align-items: center
     background: $color-black
     height: 5rem
+    @include respond(phone)
+        display: flex
+        justify-content: end
+        flex-direction: row-reverse
+    &__nav-burger
+        border: 40rem
+        border-radius: 50rem
+        background: $color-grey
+        height: 5rem
+        width: 5rem
+        display: flex
+        justify-content: center
+        align-items: center
+        display: none
+        @include respond(phone)
+            display: flex
+            position: fixed
+            top: 1rem
+            right: 5rem
+            z-index: 30
     &__nav
         display: flex
         justify-content: center
         align-items: center
         margin-right: 10rem
+        @include respond(phone)
+            display: none
     &__list
         display: flex
         justify-content: center
@@ -30,4 +53,25 @@
         display: flex
         justify-content: center
         align-items: center
-    
+        @include respond(phone)
+            position: fixed
+            z-index: 30
+            top: 1.5rem
+            right: 13rem
+            
+
+.hamburger
+    border: none
+    background: $color-black
+    height: .2rem
+    width: 2rem
+    &::before, &::after
+        content: ""
+        background: $color-black
+        height: .2rem
+        width: 2rem
+        display: block
+    &::before
+        transform: translateY(-.5rem)
+    &::after
+        transform: translateY(.4rem)
