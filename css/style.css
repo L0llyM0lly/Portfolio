@@ -34,10 +34,10 @@ html {
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 639px) and (min-width: 320px) {
   /* line 6, ../../../../Portfolio/sass/base/_base.sass */
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
 }
 
@@ -169,15 +169,16 @@ html {
   box-shadow: 0px 0px 18px 3px #8E2DE2;
   border-radius: 5%;
   padding: 1rem;
+  display: none;
 }
 
-/* line 9, ../../../../Portfolio/sass/components/_form.sass */
+/* line 11, ../../../../Portfolio/sass/components/_form.sass */
 .box-name {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 13, ../../../../Portfolio/sass/components/_form.sass */
+/* line 15, ../../../../Portfolio/sass/components/_form.sass */
 .form-title {
   color: #FFF;
   font-size: 1.3rem;
@@ -187,25 +188,25 @@ html {
   text-align: center;
 }
 
-/* line 20, ../../../../Portfolio/sass/components/_form.sass */
+/* line 22, ../../../../Portfolio/sass/components/_form.sass */
 .form-title span {
   color: #8E2DE2;
 }
 
-/* line 25, ../../../../Portfolio/sass/components/_form.sass */
+/* line 27, ../../../../Portfolio/sass/components/_form.sass */
 .form__group {
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
 }
 
-/* line 29, ../../../../Portfolio/sass/components/_form.sass */
+/* line 31, ../../../../Portfolio/sass/components/_form.sass */
 .form__box-title {
   box-sizing: border-box;
   width: 100%;
 }
 
-/* line 32, ../../../../Portfolio/sass/components/_form.sass */
+/* line 34, ../../../../Portfolio/sass/components/_form.sass */
 .form__input {
   width: 19rem;
   height: 3rem;
@@ -213,19 +214,19 @@ html {
   background: rgba(202, 205, 209, 0.1);
 }
 
-/* line 37, ../../../../Portfolio/sass/components/_form.sass */
+/* line 39, ../../../../Portfolio/sass/components/_form.sass */
 .form__label {
   color: #FFF;
   margin-bottom: 1rem;
 }
 
-/* line 40, ../../../../Portfolio/sass/components/_form.sass */
+/* line 42, ../../../../Portfolio/sass/components/_form.sass */
 .form__text {
   display: flex;
   flex-direction: column;
 }
 
-/* line 43, ../../../../Portfolio/sass/components/_form.sass */
+/* line 45, ../../../../Portfolio/sass/components/_form.sass */
 .form__input-text {
   box-sizing: border-box;
   width: 39rem;
@@ -325,33 +326,29 @@ html {
   justify-content: center;
   align-items: center;
   background: #111214;
-  height: 5rem;
+  height: 7rem;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 639px) and (min-width: 320px) {
   /* line 1, ../../../../Portfolio/sass/layout/_navigation.sass */
   .navigation {
     display: flex;
     justify-content: end;
     flex-direction: row-reverse;
+    position: relative;
   }
 }
 
-/* line 11, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 12, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__nav-burger {
-  border: 40rem;
-  border-radius: 50rem;
-  background: #A9A9AA;
-  height: 5rem;
-  width: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   display: none;
 }
 
-@media (max-width: 639px) {
-  /* line 11, ../../../../Portfolio/sass/layout/_navigation.sass */
+@media (max-width: 639px) and (min-width: 320px) {
+  /* line 12, ../../../../Portfolio/sass/layout/_navigation.sass */
   .navigation__nav-burger {
     display: flex;
     position: fixed;
@@ -361,45 +358,77 @@ html {
   }
 }
 
-/* line 27, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 23, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__nav {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 10rem;
+  transition: .5s all;
 }
 
-@media (max-width: 639px) {
-  /* line 27, ../../../../Portfolio/sass/layout/_navigation.sass */
+@media (max-width: 639px) and (min-width: 320px) {
+  /* line 23, ../../../../Portfolio/sass/layout/_navigation.sass */
   .navigation__nav {
-    display: none;
+    background: #FFF;
+    position: fixed;
+    margin-right: 0;
+    right: -100%;
+    top: 40px;
+    z-index: 30;
+  }
+  /* line 36, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .navigation__nav_active {
+    background: #FFF;
+    position: fixed;
+    margin-right: 0;
+    top: 40px;
+    z-index: 30;
+    right: 3px;
   }
 }
 
-/* line 34, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 43, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__list {
   display: flex;
   justify-content: center;
 }
 
-/* line 37, ../../../../Portfolio/sass/layout/_navigation.sass */
+@media (max-width: 639px) and (min-width: 320px) {
+  /* line 43, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .navigation__list {
+    display: block;
+    width: 330px;
+    height: 200px;
+    text-align: center;
+  }
+}
+
+/* line 51, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__item {
   list-style-type: none;
 }
 
-/* line 39, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 53, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__item:not(:last-child) {
   margin-right: 5.4rem;
 }
 
-/* line 41, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 55, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__item:hover {
   box-shadow: 0px 0px 18px 8px #8E2DE2;
   transform: scale(1.2);
   transition: 0.3s all;
 }
 
-/* line 45, ../../../../Portfolio/sass/layout/_navigation.sass */
+@media (max-width: 639px) and (min-width: 320px) {
+  /* line 60, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .navigation__item:not(:last-child) {
+    margin: 30px 0;
+  }
+}
+
+/* line 62, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__link {
   text-decoration: none;
   font-family: Montserrat;
@@ -409,15 +438,15 @@ html {
   font-size: 1.2rem;
 }
 
-/* line 52, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 69, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media (max-width: 639px) {
-  /* line 52, ../../../../Portfolio/sass/layout/_navigation.sass */
+@media (max-width: 639px) and (min-width: 320px) {
+  /* line 69, ../../../../Portfolio/sass/layout/_navigation.sass */
   .navigation__button {
     position: fixed;
     z-index: 30;
@@ -426,31 +455,59 @@ html {
   }
 }
 
-/* line 63, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 80, ../../../../Portfolio/sass/layout/_navigation.sass */
 .hamburger {
-  border: none;
-  background: #111214;
-  height: .2rem;
-  width: 2rem;
+  position: relative;
+  border: 40rem;
+  border-radius: 50rem;
+  background: #A9A9AA;
+  height: 30px;
+  width: 30px;
 }
 
-/* line 68, ../../../../Portfolio/sass/layout/_navigation.sass */
-.hamburger::before, .hamburger::after {
-  content: "";
-  background: #111214;
-  height: .2rem;
-  width: 2rem;
-  display: block;
+/* line 87, ../../../../Portfolio/sass/layout/_navigation.sass */
+.hamburger span {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #111214;
+  top: 14px;
+  left: 5px;
+  transition: .4s all;
 }
 
-/* line 74, ../../../../Portfolio/sass/layout/_navigation.sass */
-.hamburger::before {
-  transform: translateY(-0.5rem);
+/* line 95, ../../../../Portfolio/sass/layout/_navigation.sass */
+.hamburger span:nth-child(1) {
+  transform: translateY(5px);
 }
 
-/* line 76, ../../../../Portfolio/sass/layout/_navigation.sass */
-.hamburger::after {
-  transform: translateY(0.4rem);
+/* line 97, ../../../../Portfolio/sass/layout/_navigation.sass */
+.hamburger span:nth-child(3) {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 639px) and (min-width: 320px) {
+  /* line 101, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .hamburger_active span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #111214;
+    top: 14px;
+    left: 5px;
+  }
+  /* line 108, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(1px) rotate(-45deg);
+  }
+  /* line 110, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 112, ../../../../Portfolio/sass/layout/_navigation.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(1px) rotate(45deg);
+  }
 }
 
 /* Главная Страница */

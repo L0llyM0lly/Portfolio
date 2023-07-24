@@ -3,17 +3,13 @@
     justify-content: center
     align-items: center
     background: $color-black
-    height: 5rem
+    height: 7rem
     @include respond(phone)
         display: flex
         justify-content: end
         flex-direction: row-reverse
+        position: relative
     &__nav-burger
-        border: 40rem
-        border-radius: 50rem
-        background: $color-grey
-        height: 5rem
-        width: 5rem
         display: flex
         justify-content: center
         align-items: center
@@ -29,11 +25,29 @@
         justify-content: center
         align-items: center
         margin-right: 10rem
+        transition: .5s all
         @include respond(phone)
-            display: none
+            background: $color-white
+            position: fixed
+            margin-right: 0
+            right: -100%
+            top: 40px
+            z-index: 30
+            &_active
+                background: $color-white
+                position: fixed
+                margin-right: 0
+                top: 40px
+                z-index: 30
+                right: 3px
     &__list
         display: flex
         justify-content: center
+        @include respond(phone)
+            display: block
+            width: 330px
+            height: 200px
+            text-align: center
     &__item
         list-style-type: none
         &:not(:last-child)
@@ -42,6 +56,9 @@
             box-shadow: 0px 0px 18px 8px $color-purl
             transform: scale(1.2)
             transition: 0.3s all
+        @include respond(phone)
+            &:not(:last-child)
+                margin: 30px 0
     &__link
         text-decoration: none
         font-family: Montserrat
@@ -58,20 +75,39 @@
             z-index: 30
             top: 1.5rem
             right: 13rem
-            
+
 
 .hamburger
-    border: none
-    background: $color-black
-    height: .2rem
-    width: 2rem
-    &::before, &::after
-        content: ""
-        background: $color-black
-        height: .2rem
-        width: 2rem
-        display: block
-    &::before
-        transform: translateY(-.5rem)
-    &::after
-        transform: translateY(.4rem)
+    position: relative
+    border: 40rem
+    border-radius: 50rem
+    background: $color-grey
+    height: 30px
+    width: 30px
+    span
+        position: absolute
+        width: 20px
+        height: 2px
+        background-color: $color-black
+        top: 14px
+        left: 5px
+        transition: .4s all
+        &:nth-child(1)
+            transform: translateY(5px)
+        &:nth-child(3)
+            transform: translateY(-5px)
+    @include respond(phone)
+        &_active
+            span
+                position: absolute
+                width: 20px
+                height: 2px
+                background-color: $color-black
+                top: 14px
+                left: 5px
+                &:nth-child(1)
+                    transform: translateY(1px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(1px) rotate(45deg)
