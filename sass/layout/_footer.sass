@@ -1,6 +1,6 @@
 .footer
     width: 100vw
-    height: 37rem
+    height: 50rem
     background: $color-black
     display: flex
     justify-content: space-evenly
@@ -27,6 +27,8 @@
         letter-spacing: 0.05rem
         text-transform: uppercase
         margin-bottom: 2rem
+        @include respond(phone)
+            font-size: 3.5rem
         span
             color: $color-purl
             font-size: 4rem
@@ -40,6 +42,8 @@
         font-weight: 500
         color: $color-white
         margin-bottom: 1rem
+        @include respond(phone)
+            font-size: 2rem
     &__phone
         a
             text-decoration: none
@@ -47,6 +51,8 @@
             font-size: 1rem
             font-family: Montserrat
             font-weight: 500
+            @include respond(phone)
+            font-size: 1.5rem
     &__media
         display: flex
         justify-content: center
