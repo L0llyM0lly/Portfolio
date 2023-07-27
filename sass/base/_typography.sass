@@ -14,7 +14,9 @@
         text-transform: uppercase
         transform: skewY(-5deg) rotate(-15deg) scale(1.5)
         position: absolute
-        top: 10rem
+        top: 15rem
         left: 20rem
         text-shadow: $color-white 1px 0 10px
         z-index: 3
+        @include respond(phone)
+            display: none
