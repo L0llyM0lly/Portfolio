@@ -63,12 +63,18 @@
 .about-me
     height: 40rem
     display: flex
-    justify-content: space-around
-    position: relative
+    justify-content: space-evenly
     @include respond(phone)
-        
+        height: 80rem
+        display: grid
+        justify-items: center
+        grid-template-columns: 1fr
     &__box
         width: 40rem
+        position: relative
+        @include respond(phone)
+            height: 40rem
+            width: 50rem
     &__about
         color: $color-black
         font-size: 4rem
@@ -77,8 +83,11 @@
         letter-spacing: 0.16rem
         text-transform: uppercase
         position: absolute
-        top: 4rem
-        left: 47rem
+        top: 11rem
+        left: 1rem
+        @include respond(phone)
+            top: 5rem
+            left: 7rem
         span
             color: $color-purl
             font-size: 6rem
@@ -91,20 +100,28 @@
         font-weight: 500
         line-height: 2rem
         position: absolute
-        top: 14rem
-        left: 51rem
+        top: 21rem
+        left: 5rem
+        @include respond(phone)
+            top: 17rem
+            left: 12.5rem
 .experience
     display: flex
     justify-content: space-around
     align-items: center
     width: 40rem
+    position: relative
+    @include respond(phone)
+        height: 40rem
+        width: 50rem
+        
     &__one
-        top: 7rem
-        left: 7rem
+        top: 6rem
+        left: 4rem
         position: absolute
     &__two
         top: 10rem
-        left: 25rem
+        left: 23rem
         position: absolute
     &__text
         color: $color-black
@@ -113,6 +130,9 @@
         font-weight: 600
         line-height: 2rem
         letter-spacing: -0.56px
+        @include respond(phone)
+            &:not(:last-child)
+                margin-right: 1rem
     &__numb
         margin: 0 
         color: $color-purl
@@ -122,13 +142,20 @@
         font-weight: 400
         letter-spacing: 0.128rem
         text-transform: uppercase
+        @include respond(phone)
+            &:not(:last-child)
+                margin-right: 1rem
     &__photo
         width: 13rem
         height: 15rem
-        
+        margin-bottom: 3rem
+        &:last-child
+            margin-bottom: 0rem
 
 .text-box
     display: flex
     justify-content: space-evenly
     align-items: center
-
+    &:not(:last-child)
+        margin-bottom: 3rem
+    
