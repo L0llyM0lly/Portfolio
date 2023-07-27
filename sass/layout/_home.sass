@@ -15,7 +15,7 @@
         z-index: 7
     &__left
         width: 40rem
-        height: 40rem
+        height: 20rem
         position: absolute
         top: 10rem
         left: 5rem
@@ -65,6 +65,8 @@
     display: flex
     justify-content: space-around
     position: relative
+    @include respond(phone)
+        
     &__box
         width: 40rem
     &__about

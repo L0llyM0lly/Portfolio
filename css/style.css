@@ -493,6 +493,8 @@ html {
   border-radius: 1rem;
   transform: scale(1.2);
   transition: 0.3s all;
+  width: 7rem;
+  text-align: center;
 }
 
 @media (max-width: 639px) and (min-width: 300px) {
@@ -505,7 +507,7 @@ html {
   }
 }
 
-/* line 70, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 72, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__link {
   text-decoration: none;
   font-family: Montserrat;
@@ -516,13 +518,13 @@ html {
 }
 
 @media (max-width: 639px) and (min-width: 300px) {
-  /* line 70, ../../../../Portfolio/sass/layout/_navigation.sass */
+  /* line 72, ../../../../Portfolio/sass/layout/_navigation.sass */
   .navigation__link {
     font-size: 1.5rem;
   }
 }
 
-/* line 81, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 83, ../../../../Portfolio/sass/layout/_navigation.sass */
 .navigation__button {
   display: flex;
   justify-content: center;
@@ -530,7 +532,7 @@ html {
 }
 
 @media (max-width: 639px) and (min-width: 300px) {
-  /* line 81, ../../../../Portfolio/sass/layout/_navigation.sass */
+  /* line 83, ../../../../Portfolio/sass/layout/_navigation.sass */
   .navigation__button {
     position: fixed;
     z-index: 30;
@@ -539,7 +541,7 @@ html {
   }
 }
 
-/* line 92, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 94, ../../../../Portfolio/sass/layout/_navigation.sass */
 .hamburger {
   position: relative;
   border: 40rem;
@@ -549,7 +551,7 @@ html {
   width: 30px;
 }
 
-/* line 99, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 101, ../../../../Portfolio/sass/layout/_navigation.sass */
 .hamburger span {
   position: absolute;
   width: 20px;
@@ -560,18 +562,18 @@ html {
   transition: .4s all;
 }
 
-/* line 107, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 109, ../../../../Portfolio/sass/layout/_navigation.sass */
 .hamburger span:nth-child(1) {
   transform: translateY(5px);
 }
 
-/* line 109, ../../../../Portfolio/sass/layout/_navigation.sass */
+/* line 111, ../../../../Portfolio/sass/layout/_navigation.sass */
 .hamburger span:nth-child(3) {
   transform: translateY(-5px);
 }
 
 @media (max-width: 639px) and (min-width: 300px) {
-  /* line 113, ../../../../Portfolio/sass/layout/_navigation.sass */
+  /* line 115, ../../../../Portfolio/sass/layout/_navigation.sass */
   .hamburger_active span {
     position: absolute;
     width: 20px;
@@ -580,15 +582,15 @@ html {
     top: 14px;
     left: 5px;
   }
-  /* line 120, ../../../../Portfolio/sass/layout/_navigation.sass */
+  /* line 122, ../../../../Portfolio/sass/layout/_navigation.sass */
   .hamburger_active span:nth-child(1) {
     transform: translateY(1px) rotate(-45deg);
   }
-  /* line 122, ../../../../Portfolio/sass/layout/_navigation.sass */
+  /* line 124, ../../../../Portfolio/sass/layout/_navigation.sass */
   .hamburger_active span:nth-child(2) {
     display: none;
   }
-  /* line 124, ../../../../Portfolio/sass/layout/_navigation.sass */
+  /* line 126, ../../../../Portfolio/sass/layout/_navigation.sass */
   .hamburger_active span:nth-child(3) {
     transform: translateY(1px) rotate(45deg);
   }
@@ -618,7 +620,7 @@ html {
 /* line 16, ../../../../Portfolio/sass/layout/_home.sass */
 .section-about__left {
   width: 40rem;
-  height: 40rem;
+  height: 20rem;
   position: absolute;
   top: 10rem;
   left: 5rem;
@@ -699,12 +701,12 @@ html {
   position: relative;
 }
 
-/* line 68, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 70, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me__box {
   width: 40rem;
 }
 
-/* line 70, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 72, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me__about {
   color: #111214;
   font-size: 4rem;
@@ -717,13 +719,13 @@ html {
   left: 47rem;
 }
 
-/* line 80, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 82, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me__about span {
   color: #8E2DE2;
   font-size: 6rem;
 }
 
-/* line 83, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 85, ../../../../Portfolio/sass/layout/_home.sass */
 .about-me__text {
   color: #A9A9AA;
   box-sizing: border-box;
@@ -737,7 +739,7 @@ html {
   left: 51rem;
 }
 
-/* line 94, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 96, ../../../../Portfolio/sass/layout/_home.sass */
 .experience {
   display: flex;
   justify-content: space-around;
@@ -745,21 +747,21 @@ html {
   width: 40rem;
 }
 
-/* line 99, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 101, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__one {
   top: 7rem;
   left: 7rem;
   position: absolute;
 }
 
-/* line 103, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 105, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__two {
   top: 10rem;
   left: 25rem;
   position: absolute;
 }
 
-/* line 107, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 109, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__text {
   color: #111214;
   font-size: 14px;
@@ -769,7 +771,7 @@ html {
   letter-spacing: -0.56px;
 }
 
-/* line 114, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 116, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__numb {
   margin: 0;
   color: #8E2DE2;
@@ -781,13 +783,13 @@ html {
   text-transform: uppercase;
 }
 
-/* line 123, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 125, ../../../../Portfolio/sass/layout/_home.sass */
 .experience__photo {
   width: 13rem;
   height: 15rem;
 }
 
-/* line 128, ../../../../Portfolio/sass/layout/_home.sass */
+/* line 130, ../../../../Portfolio/sass/layout/_home.sass */
 .text-box {
   display: flex;
   justify-content: space-evenly;
